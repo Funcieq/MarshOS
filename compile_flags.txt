@@ -1,0 +1,12 @@
+-std=gnu11
+-ffreestanding
+-fno-stack-protector
+-fno-pic
+-fno-pie
+-m64
+-march=x86-64
+-mno-red-zone
+-mgeneral-regs-only
+-mcmodel=kernel
+-I.deps/limine-12.10.0
+-Isrc

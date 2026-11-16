@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "MarshOS x86_64",
+            "compilerPath": "cc",
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "gnu11",
+            "includePath": [
+                "${workspaceFolder}/src",
+                "${workspaceFolder}/.deps/limine-12.10.0"
+            ],
+            "compilerArgs": [
+                "-ffreestanding",
+                "-m64",
+                "-mno-red-zone",
+                "-mgeneral-regs-only",
+                "-mcmodel=kernel"
+            ]
+        }
+    ],
+    "version": 4
+}
