@@ -15,7 +15,8 @@ SECTIONS {
     } :requests
     .text ALIGN(4096) : { *(.text .text.*) } :text
     .rodata ALIGN(4096) : { *(.rodata .rodata.*) } :rodata
-    .data ALIGN(4096) : { *(.data .data.*) } :data
+    . = ALIGN(4096);
+    .data : { *(.data .data.*) } :data
     .bss : { *(.bss .bss.*) *(COMMON) } :data
     /DISCARD/ : { *(.eh_frame*) *(.note*) }
 }
